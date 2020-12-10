@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #4158D0;
+  background-image: linear-gradient(100deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+}
+.h-100 {
+  height: 100vh;
+}
+.w-33 {
+  width: 33%;
+}
+.w-25 {
+  width: 25%;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+
+}
+.items-center {
+  align-items: center;
+}
+.white-70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header, .bottomBar{
+  padding: 2em;
+}
+
+.header {
+  height: 32px;
+  border-bottom: 1px solid  rgba(255, 255, 255, 0.2);;
+}
+
+.bottomBar {
+  height: 32px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  border-top: 1px solid  rgba(255, 255, 255, 0.2);;
+}
+
+.fleets {
+  padding: 1em;
+  padding-bottom: 0;
+  width: 100%;
+  position: relative;
+  overflow-x: scroll;
+  border-bottom: 1px solid  rgba(255, 255, 255, 0.2);
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+  img {
+    cursor: pointer;
+    margin-right: 12px;
+    border-radius: 50%;
+    width: 60px;
+    padding: 2px;
+    &:not(:first-of-type) {
+      border: 2px solid  rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.tweets {
+  width: 100%;
+  height: 38vh;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+  @media (max-width: 767px) {
+    height: 74vh;
+  }
+  .tweet {
+    padding: 1em;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.2);
+    div {
+      
+      h2 {
+        margin: 0;
+        font-size: 18px;
+        span {
+          font-size: 14px;
+          font-weight: 300;
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+      p {
+        margin-top: 0;
+        font-size: 14px;
+      }
+      &:first-of-type {
+        width: 20%;
+        margin-right: 8px;
+        img {
+          width: 50px;
+          border-radius: 50%;
+        }
+      }
+      .actions {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img {
+          width: 16px;
+        }
+      }
+      width: 80%;
+    }
+
+  }
+}
+.newTweet {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+
+  .bgNewtweet {
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    bottom: 65px;
+    right: 15px;
+    transition: all .7s ease-in;
+    background-color :rgba(21, 32, 43, .8);;
+    border-radius: 50%;
+    display: flex;
+    place-content: center;
+    img {
+      align-self: center;
+    }
+    &:hover {
+      background-color :rgba(21, 32, 43, 1);;
+    }
+  }
+}
+.container {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2em;
+  height: 60vh;
+  width: 320px;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+  border: solid 1px rgba(223, 211, 211, 0.5);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  @media (max-width: 767px) {
+    width: 90vw;
+    height: 100vh;
+  }
+}
+

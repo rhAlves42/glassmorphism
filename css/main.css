@@ -104,6 +104,9 @@ h1, h2, h3, h4 {
 }
 
 .fleets img {
+  background-image: linear-gradient(20deg, rgba(65, 88, 208, 0.3) 0%, rgba(200, 80, 192, 0.5) 20%, rgba(255, 204, 112, 0.7) 100%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   cursor: pointer;
   margin-right: 12px;
   border-radius: 50%;
@@ -168,6 +171,7 @@ h1, h2, h3, h4 {
 }
 
 .tweets .tweet div:first-of-type img {
+  background-image: linear-gradient(20deg, rgba(65, 88, 208, 0.3) 0%, rgba(200, 80, 192, 0.5) 20%, rgba(255, 204, 112, 0.7) 100%);
   width: 50px;
   border-radius: 50%;
 }
@@ -184,9 +188,11 @@ h1, h2, h3, h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
 }
 
 .tweets .tweet div .actions img {
+  background-image: none;
   width: 16px;
 }
 
@@ -209,7 +215,7 @@ h1, h2, h3, h4 {
   height: 55px;
   position: relative;
   bottom: 65px;
-  right: 15px;
+  right: 5px;
   -webkit-transition: all .7s ease-in;
   transition: all .7s ease-in;
   background-color: rgba(21, 32, 43, 0.8);
@@ -251,5 +257,24 @@ h1, h2, h3, h4 {
     width: 90vw;
     height: 100vh;
   }
+}
+
+.bgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: absolute;
+}
+
+.bgContainer img {
+  width: 100vh;
+  height: 100vh;
 }
 /*# sourceMappingURL=main.css.map */
